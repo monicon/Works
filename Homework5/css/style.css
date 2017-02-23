@@ -1,0 +1,357 @@
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('helveticaneue-thin-webfont.woff2') format('woff2'),
+	/*E:\HTML\Homework5\fonts\fonts\helveticaneue-thin-webfont.woff*/
+	url('helveticaneue-thin-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('helvetica-bold-webfont.woff2') format('woff2'),
+	url('helvetica-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+/*--------------обнуление стилей----------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; /* обнуляем внешние отступы */
+	padding: 0; /* обнуляем внутренние отступы */
+	border: 0; /* убираем бордюры */
+	outline: 0; /* убираем контуры */
+	font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+	vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+	background: transparent; /* устанавливаем фон прозрачным */
+}
+body {
+	line-height: 1; /* устанавливаем базовую высоту */
+}
+ol, ul {
+	list-style: none; /* убираем маркеры для нумерованных и обычных списков */
+}
+blockquote, q {
+	quotes: none; /* убираем кавычки для цитат */
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ''; /* убираем */
+	content: none; /* и скрываем генерируемое содержимое */
+}
+:focus {
+	outline: 0; /* убираем контуры вокруг ссылок при фокусе */
+}
+ins {
+	text-decoration: none; /* убираем подчеркивание для вставленного текста */
+}
+del {
+	text-decoration: line-through; /* убираем перечеркивание для удаленного текста */
+}
+table {
+	border-collapse: collapse; /* убираем рамки двойной толщины */
+	border-spacing: 0; /* убираем расстояние между ячейками */
+}
+/*---- парастры рабочей области----*/
+html{
+	max-width: 1200px;
+	max-height: 1070px;
+}
+body{
+	max-width: 1200px;
+	max-height: 1070px;
+}
+/*верхнее меню*/
+.mainbox{
+	margin: auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	width: 1200px;
+	height: 1030px;
+	background-image: url(background.png);
+}
+.mainmenu{
+	background-color: #074d8a;
+	height: 40px;
+	width: inherit;
+	border: 2px black;
+	float: left;
+}
+table{
+	display: inline-block;
+	float: right;
+}
+.part2{
+	margin-right: 20px;
+}
+td{
+	padding: 0 10px 0 10px;
+	height: 40px;
+	color: #60b5ed;
+	font-style: normal;
+	font-size: 15px;
+	font-family: 'Helvetica Neue';
+	vertical-align: middle;
+}
+.line{
+	display: block;
+	float: right;
+	padding-top: 5px;
+}
+.flag{
+	vertical-align: inherit;
+	padding-right: 10px;
+	padding-left: 15px;
+	border-left: 4px black;
+}
+td:hover{
+	border-left: 2px white;
+	color: white;
+	background-color: #4eabda;
+}
+a{
+	text-decoration: underline;
+	color: white;
+}
+.subpoint{
+	color: white;
+	margin-right: 20px;
+}
+td.subpoint:hover{
+	background: linear-gradient(to top, #2e7ac4, #50afdc);
+}
+/*-------------Центральный блок---------*/
+.center{
+	position: relative;
+	display: block;
+	float: left;
+	width: 550px;
+	height: 560px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 15% 24% 16% 30%;
+}
+.centerhead{
+	clear: both;
+	text-align: center;
+	display: block;
+	height: 57px;
+	width: auto;
+	padding-bottom: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.centerhead p{
+	clear: both;
+	color: white;
+	height: auto;
+	font-style: normal;
+	font-size: 21px;
+	font-family: 'Helvetica Neue';
+	padding-top: 3%;
+}
+.centerbody{
+	clear: both;
+	text-align: center;
+	padding-top: 3px;
+	display: block;
+	height: inherit;
+	width: auto;
+	border-top: 3px solid gray;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.facebutton{
+	clear: both;
+	position: relative;
+	float: left;
+	margin: 5% 25% 5% 25%;
+	text-align: center;
+	display: block;
+	height: 36px;
+	width: 275px;
+	background: linear-gradient(to top, #334166, #3e549d);
+	border: 1px outset #7789b7;
+	border-radius: 5px;
+}
+.facebutton a{
+	clear: both;
+	color: white;
+	height: auto;
+	font-style: normal;
+	font-size: 18px;
+	font-family: 'Helvetica Neue';
+	text-decoration: none;
+}
+.f{
+	float: left;
+	position: absolute;
+	width: 40px;
+	height: auto;
+	border-right: 1px outset #4e69ae;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.f a{
+	display: block;
+	width: 39px;
+	font-size: 25px;
+	padding-top: 6px;
+	height: 30px;
+	font-weight: bold;
+}
+.face{
+	float: right;
+	position: relative;
+	width: 233px;
+	height: 36px;
+	border-left: 1px outset #4e69ae;
+}
+.face a{
+	display: block;
+	width: 232px;
+	padding-top: 10px;
+	height: 30px;
+	font-weight: bold;
+}
+.face:hover{
+	background: linear-gradient(to top, #161d31, #2a3d70);
+}
+.f:hover{
+	background: linear-gradient(to top, #161d31, #2a3d70);
+}
+/*--------Линии и надпись OU ---------*/
+.lineou{
+	clear: both;
+	position: relative;
+	float: left;
+	margin: 0 25% 5% 25%;
+	text-align: center;
+	display: block;
+	height: 30px;
+	width: 275px;
+}
+.firstline{
+	border-top: 3px ridge gray;
+	display: block;
+	float: left;
+	width: 42%;
+	height: 30px;
+}
+.ou{
+	display: block;
+	width: 16%;
+	color: #cccccc;
+	text-align: center;
+	margin-top: -5px;
+	font-family: 'Helvetica Neue';
+	float: left;
+	height: 30px;
+}
+.secondline{
+	display: block;
+	float: left;
+	width: 42%;
+	height: 30px;
+	border-top: 3px ridge gray;
+}
+form{
+	clear: both;
+	position: relative;
+	float: left;
+	margin: -5% 10% 25% 13%;
+	text-align: center;
+	display: block;
+	height: 245px;
+	width: 260px;
+	color: white;
+}
+.check{
+	clear: both;
+	position: relative;
+	float: left;
+	margin: 3% 25% 0 25%;
+	text-align: left;
+	display: block;
+	height: 36px;
+	width: 275px;
+	color: #cccccc;
+	font-style: normal;
+	font-size: 14px;
+	font-family: 'Helvetica Neue';
+}
+form .check input{
+	width: 15px;
+	height: 15px;
+	margin-left: 0;
+	margin-right: 6px;
+	margin-top: -1px;
+	border-left: 2px solid #f7f7f7;
+}
+.buttoncreate{
+	clear: both;
+	display: block;
+	width: 150px;
+	height: 34px;
+	border-radius: 4px;
+	margin-left: 50%;
+	background: linear-gradient(to top, #2e7ac4, #50afdc);
+}
+.buttoncreate input{
+	margin-left: inherit;
+	background: none;
+	height: 100%;
+	width: 100%;
+	border: 1px ridge #67c6e6;
+	border-radius: 4px;
+	font-size: 14px;
+	color: white;
+	font-family: 'Helvetica Neue';
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.inputbox input{
+	clear: both;
+	position: relative;
+	float: left;
+	margin: 2% 25% 5% 25%;
+	display: block;
+	color: white;
+	padding-left: 15px;
+	background-color: #0f0f0f;
+	border-bottom: 1px solid #484847;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-style: normal;
+	font-size: 14px;
+	font-family: 'Helvetica Neue';
+	height: 36px;
+	width: 262px;
+}
+.inputbox input:hover{
+	background: linear-gradient(to top, #1b5286, #1e4b76);
+	border-bottom: 1px solid #689bcc;
+	box-shadow: 0 0 10px rgba(74,135,175,1);
+}
+/*------- Просто нижняя строка --------*/
+.footer{
+	text-align: center;
+	clear: both;
+	display: block;
+	height: 40px;
+	width: 100%;
+	background-color: none;
+}
+.footer p{
+	color: #cccccc;
+	line-height: 160%;
+	font-style: normal;
+	font-size: 12px;
+	font-family: 'Helvetica Neue';
+	vertical-align: middle;
+}
