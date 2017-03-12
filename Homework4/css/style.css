@@ -44,180 +44,31 @@ table {
 	border-spacing: 0; /* убираем расстояние между ячейками */
 }
 /*-----------------стили обнулились----------------*/
-body{
-    background-image: url(back.png);
-    background-color: #0c78a2;
-    background-repeat: repeat-x;
-    background-size: inherit;
-	height: auto;
-}
-#centerarea{
-    position: absolute;
-    width: 1000px;
-    height: inherit;
-    left: 25%;
-    top: 0;
-    margin-left: -150px;
-    margin-top: 0px;
-    background: white;
-    border: solid 1px black;
-    box-shadow: 0 0 5px 2px;
-    padding: 0px;
-    overflow: inherit;
-}
-.logo{
-    display: inline-block;
-	height: 159px;
-    padding-top: 15px;
-    padding-left: 40px;
-    float: left;
-}
-.contactus{
-    display: inline-block;
-    padding-top: 12px;
-    padding-right: 30px;
-    position: relative;
-    float: right;
-}
-.countbox li{
-    display: inline;
-}
-.countries{
-    display: inline;
-    width: auto;
-    margin-top: 30px;
-    margin-right: 30px;
-    padding: 0;
-    float: right;
-    clear: right;
-}
-.photo{
-	clear: both;
-}
-#menu{
-	clear: both;
-	position: absolute;
-	width: 1000px;
-	height: 30px;
-	left: 0;
-	top: auto;
-	margin-left: 0px;
-	margin-top: 0px;
-	background: #313131;
-	padding: 0px;
-	box-shadow: 0 0 5px 3px;
-	overflow: inherit;
-}
-.menuline{
-	width: inherit;
-	height: inherit;
-}
-li a{
-	text-decoration: none;
-	color: white;
-}
-.menuline li{
-	display: inline;
-	font-style: normal;
-	font-family: Microsoft Sans Serif;
-	font-size: 17px;
-	font-stretch: ultra-condensed;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	background-color: none;
-}
-.buttons{
-	display: inline-block;
-	position: relative;
-	float: left;
-	padding-top: 5px;
-	padding-left: 45px;
-	width: auto;
-	height: 29px;
-}
-.triangle{
-	display: inline-block;
-	font-style: normal;
-	margin-left: 10px;
-	width: auto;
-	height: auto;
-	font-family: Arial;
-	font-size: 11px;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	background-color: none;
-}
-.submenu1{
-	margin-left: -12px;
-	top: 27px;
-	clear: both;
-	display: none;
-	border-top: 2px black;
-	position: absolute;
-	width: 155px;
-	height: 160px;
-	background-color: #313131;
-	z-index: 1;
-}
-.submenu li a{
-	margin-left: -15px;
-	display: block;
-	height: 20px;
-	margin-top: 9px;
-}
-.buttons:hover .submenu1{
-	display: block;
-	clear: both;
-}
-.fon{
-	margin-top: 30px;
-	width: 1000px;
-	position: relative;
-	background: url(kolonExampleFon.png) repeat-y;
-	box-shadow: 0 0 5px 3px;
-	float: left;
-}
-.leftcolumn{
-	padding: 30px 20px 20px 20px;
-	width: 17%;
-	float: left;
-	background-color: #edeef0;
-}
-.centercolumn{
-	padding: 20px 20px 20px 20px;
-	width: 54%;
-	float: left;
-	background-color: none;
-}
-.rightcolumn{
-	padding: 30px 20px 20px 20px;
-	width: 16%;
-	border-left: 2px black;
-	background-color: #edeef0;
-	float: right;
-}
-h1{
-	font-size: 20px;
-	font-weight: bold;
-	font-family: sans-serif;
-	text-align: center;
-	padding-bottom: 20px;
-}
-p {
-	font-size: 16px;
-	font-weight: bold;
-	font-family: sans-serif;
-}
-footer{
-	display: block;
-	position: inherit;
-	margin-top: 900px;
-	margin-left: 400px;
-}
-.footline{
-	clear: both;
-	position: inherit;
-	height: 80px;
-}
+body{background-image:url(back.png);
+background-color:#0c78a2;
+background-repeat:repeat-x;
+background-size:inherit;
+height:auto;}
+#centerarea{position:absolute; width:1000px; height:inherit; left:25%; top:0; margin-left:-150px; margin-top:0px; background:white; border:solid 1px black; box-shadow:0 0 5px 2px; padding:0px; overflow:inherit;}
+.logo{display:inline-block; height:159px; padding-top:15px; padding-left:40px; float:left;}
+.contactus{display:inline-block; padding-top:12px; padding-right:30px; position:relative; float:right;}
+.countbox li{display:inline;}
+.countries{display:inline; width:auto; margin-top:30px; margin-right:30px; padding:0; float:right; clear:right;}
+.photo{clear:both;}
+#menu{clear:both; position:absolute; width:1000px; height:30px; left:0;	top:auto; margin-left:0px; margin-top:0px; background:#313131; padding:0px; box-shadow:0 0 5px 3px;	overflow:inherit;}
+.menuline{width:inherit; height:inherit;}
+li a{text-decoration:none; color:white;}
+.menuline li{display:inline; font-style:normal;	font-family:Microsoft Sans Serif; font-size:17px; font-stretch:ultra-condensed;	color:white; text-align:center;	text-decoration:none;}
+.buttons{display:inline-block; position:relative; float:left; padding-top:5px; padding-left:45px; width:auto; height:29px;}
+.triangle{display:inline-block;	font-style:normal; margin-left:10px; width:auto; height:auto; font-family:Arial; font-size:11px; color:white; text-align:center; text-decoration:none;}
+.submenu1{margin-left:-12px; top:27px; clear:both; display:none; border-top:2px black; position:absolute; width:155px; height:160px; background-color:#313131; z-index:1;}
+.submenu li a{margin-left:-15px; display:block; height:20px; margin-top:9px;}
+.buttons:hover .submenu1{display:block; clear:both;}
+.fon{margin-top:30px; width:1000px; position:relative; background:url(kolonExampleFon.png) repeat-y; box-shadow:0 0 5px 3px; float:left;}
+.leftcolumn{padding:30px 20px 20px 20px; width:17%; float:left; background-color:#edeef0;}
+.centercolumn{padding:20px 20px 20px 20px; width:54%; float:left;}
+.rightcolumn{padding:30px 20px 20px 20px; width:16%; border-left:2px black; background-color:#edeef0; float:right;}
+h1{font-size:20px; font-weight:bold; font-family:sans-serif; text-align:center; padding-bottom:20px;}
+p {font-size:16px; font-weight:bold; font-family:sans-serif;}
+footer{display:block; position:inherit; margin-top:900px; margin-left:400px;}
+.footline{clear:both; position:inherit; height:80px;}
